@@ -1,15 +1,8 @@
 const express = require("express");
-
 const app = express();
+require("dotenv").config();
 
-app.get("/", (req, res, next) => {
-  res.json("asfasdf");
-});
+require("./database/init.mongo");
+app.use("/", require("./routes/index"));
 
-app.get("/test", (req, res, next) => {
-  res.json("test");
-});
-
-app.listen(process.env.PORT, () => {
-  console.log("Example app is listening in 3000");
-});
+module.exports = app;
