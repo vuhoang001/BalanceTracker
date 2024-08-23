@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect server.js"
+    "start": "nodemon --inspect server.js",
+    "vercel build": "nodemon --inspect server.js"
   },
   "keywords": [],
   "author": "",
