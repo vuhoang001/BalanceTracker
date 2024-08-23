@@ -3,7 +3,11 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res, next) => {
-  res.json("tvh thich tay hu va nan mun");
+  res.json("asfasdf");
+});
+
+app.get("/test", (req, res, next) => {
+  res.json("test");
 });
 
 app.listen(3000, () => {
