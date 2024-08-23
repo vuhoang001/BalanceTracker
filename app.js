@@ -10,6 +10,6 @@ app.get("/test", (req, res, next) => {
   res.json("test");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Example app is listening in 3000");
 });
